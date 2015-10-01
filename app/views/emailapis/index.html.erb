@@ -1,0 +1,8 @@
+<h1>HeyHey Taxi --> Get My News Letter Now</h1>
+<p>
+  Give me your email and I will show you the money
+</p>
+<%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
+  <%= email_field(:email, :email, {id: "email", placeholder: "email address"}) %>
+  <%= submit_tag("Sign me up!") %>
+<% end %>
